@@ -16,7 +16,7 @@ nvidia-smi
 source .bashrc
 source .bashrc
 echo -e "import torch\nprint(torch.cuda.is_available())\nprint(torch.cuda.get_device_name(0))" > test_cuda.py
-python test_cuda.py
+#python test_cuda.py
 
 ## run these lines in the vm to make sure port 8188 is open for external access
 #sudo ufw allow 8188/tcp
