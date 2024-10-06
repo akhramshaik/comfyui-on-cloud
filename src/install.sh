@@ -42,6 +42,16 @@ chmod +x install_extensions.sh
 chmod +x install_checkpoints.sh
 ./install_extensions.sh
 
+echo " "
+echo " ---------------- extensions installed "
+echo " "
+./install_checkpoints.sh
+#./install_checkpoints_big.sh
+
+echo " "
+echo " ---------------- checkpoints installed "
+echo " "
+
 
 # Dynamically creating run_the_server.sh
 
