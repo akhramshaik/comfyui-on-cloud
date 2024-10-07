@@ -17,3 +17,30 @@ cp run_the_server.sh ComfyUI
 echo " "
 echo " ---------------- custom run_the_server.sh created "
 echo " "
+
+
+
+SERVICE_FILE_CONTENT="[Unit]
+Description=ComfyUI Server
+
+[Service]
+Type=simple
+ExecStart=${comfy_ui_dir}/run_the_server.sh
+
+
+
+[Install]
+WantedBy=multi-user.target"
+
+# Create the systemd service file
+echo "$SERVICE_FILE_CONTENT" | sudo tee /etc/systemd/system/comfyui.service > /dev/null
+
+# Reload systemd to recognize the new service
+sudo systemctl daemon-reload
+sudo systemctl enable comfyui.service
+sudo systemctl start comfyui.service
+
+echo " "
+echo " ---------------- setup completed "
+echo " "
+echo -e " ---------------- For health check go to this address $(curl -s httpbin.org/ip | jq -r .origin):8188 in your browser"
