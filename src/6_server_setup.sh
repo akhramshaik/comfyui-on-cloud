@@ -28,7 +28,7 @@ Description=ComfyUI Server
 
 [Service]
 Type=simple
-ExecStart=${comfy_ui_dir}/run_the_server.sh
+ExecStart=${COMFYUI_DIR}/run_the_server.sh
 
 
 
