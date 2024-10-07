@@ -1,24 +1,27 @@
 #!/bin/bash
 
-echo "Current directory: $(pwd)"
+USER_NAME=$(whoami)
+PYTHON_PATH=$(which python)
+COMFYUI_DIR="$(pwd)/ComfyUI"
+COMFYUI_RUNNER_PATH="${COMFYUI_DIR}/main.py"
 
-comfy_ui_dir="$(pwd)/ComfyUI"
-echo "ComfyUI Directory: $comfy_ui_dir"
+echo "USER_NAME: $USER_NAME"
+echo "PYTHON_PATH: $PYTHON_PATH"
+echo "COMFYUI_DIR: $COMFYUI_DIR"
+echo "COMFYUI_RUNNER_PATH: $COMFYUI_RUNNER_PATH"
 
-#Dynamically creating run_the_server.sh
+#Dynamically Creating run_the_server.sh
 echo "#!/bin/bash" > run_the_server.sh
 echo "" >> run_the_server.sh
-echo "python main.py --listen" >> run_the_server.sh
+echo "\$PYTHON_PATH \$COMFYUI_RUNNER_PATH --listen" >> run_the_server.sh
 
-# Make the script executable
+# Make The Script Executable
 chmod +x run_the_server.sh
 cp run_the_server.sh ComfyUI
 
 echo " "
-echo " ---------------- custom run_the_server.sh created "
+echo " ---------------- Custom run_the_server.sh Created "
 echo " "
-
-
 
 SERVICE_FILE_CONTENT="[Unit]
 Description=ComfyUI Server
@@ -32,7 +35,7 @@ ExecStart=${comfy_ui_dir}/run_the_server.sh
 [Install]
 WantedBy=multi-user.target"
 
-# Create the systemd service file
+# Create The systemd service File
 echo "$SERVICE_FILE_CONTENT" | sudo tee /etc/systemd/system/comfyui.service > /dev/null
 
 # Reload systemd to recognize the new service
