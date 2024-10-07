@@ -36,7 +36,6 @@ pip install -r custom_nodes/ComfyUI-WD14-Tagger/requirements.txt
 #9 - ComfyUI-Custom-Scripts
 git clone https://github.com/pythongosssss/ComfyUI-Custom-Scripts.git custom_nodes/ComfyUI-Custom-Scripts
 
-
 #10 - ReActorFaceSwap
 git clone https://github.com/Gourieff/comfyui-reactor-node custom_nodes/comfyui-reactor-node
 python custom_nodes/comfyui-reactor-node/install.py
@@ -47,11 +46,20 @@ wget -P ~/models/facerestore_models https://github.com/TencentARC/GFPGAN/release
 git clone https://github.com/ltdrdata/ComfyUI-Impact-Pack custom_nodes/ComfyUI-Impact-Pack
 python custom_nodes/ComfyUI-Impact-Pack/install.py
 
+#12 - UltimateSDUpscale
+git clone https://github.com/ssitu/ComfyUI_UltimateSDUpscale.git custom_nodes/ComfyUI_UltimateSDUpscale
 
-#sdxl_prompt_styler
-# git clone https://github.com/twri/sdxl_prompt_styler custom_nodes/sdxl_prompt_styler
+#12 - Florence2
+git clone https://github.com/kijai/ComfyUI-Florence2.git custom_nodes/ComfyUI-Florence2
+pip install -r custom_nodes/ComfyUI-Florence2/requirements.txt
 
+#13 - Crystools
+git clone https://github.com/crystian/ComfyUI-Crystools.git custom_nodes/ComfyUI-Crystools
+pip install -r custom_nodes/ComfyUI-Crystools/requirements.txt
 
-# git clone https://github.com/mav-rik/facerestore_cf custom_nodes/facerestore_cf
-# wget https://github.com/TencentARC/GFPGAN/releases/download/v1.3.4/GFPGANv1.4.pth -P ./models/facerestore_models/
-# wget https://github.com/sczhou/CodeFormer/releases/download/v0.1.0/codeformer.pth -P ./models/facerestore_models/
+#14 - Inspyrenet Rembgools
+git clone https://github.com/john-mnz/ComfyUI-Inspyrenet-Rembg.git custom_nodes/ComfyUI-Inspyrenet-Rembg
+pip install -r custom_nodes/ComfyUI-Inspyrenet-Rembg/requirements.txt
+
+#15 - Rgthree
+git clone https://github.com/rgthree/rgthree-comfy.git custom_nodes/rgthree-comfy
