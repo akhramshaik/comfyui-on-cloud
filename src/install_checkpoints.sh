@@ -89,5 +89,3 @@ wget https://huggingface.co/ostris/ip-composition-adapter/resolve/main/ip_plus_c
 # wget https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-plus_sd15_lora.safetensors --output-document=ip-adapter-faceid-plus_sd15_lora.safetensors && mv ip-adapter-faceid-plus_sd15_lora.safetensors "$DEST_DIR_LORAS"
 
 # #UPSCALE_METHODS
-
-

@@ -55,5 +55,3 @@ python custom_nodes/ComfyUI-Impact-Pack/install.py
 # git clone https://github.com/mav-rik/facerestore_cf custom_nodes/facerestore_cf
 # wget https://github.com/TencentARC/GFPGAN/releases/download/v1.3.4/GFPGANv1.4.pth -P ./models/facerestore_models/
 # wget https://github.com/sczhou/CodeFormer/releases/download/v0.1.0/codeformer.pth -P ./models/facerestore_models/
-
-
