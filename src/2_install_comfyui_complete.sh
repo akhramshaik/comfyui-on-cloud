@@ -40,7 +40,7 @@ echo " "
 
 chmod +x ./install_checkpoints.sh
 
-./install_checkpoints.sh
+#./install_checkpoints.sh
 
 echo " "
 echo " ---------------- Checkpoints Installed "
