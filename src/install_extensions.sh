@@ -3,16 +3,12 @@
 # make sure you are in comfyui installation folder
 mkdir -p ./models/facerestore_models/
 
-
-
-#COMFY MANAGER
-
+#1 - Comfy Manager
 git clone https://github.com/ltdrdata/ComfyUI-Manager.git custom_nodes/ComfyUI-Manager
 pip install -r custom_nodes/ComfyUI-Manager/requirements.txt
 
-# comfyui-workspace-manager
-#git clone https://github.com/11cafe/comfyui-workspace-manager.git custom_nodes/comfyui-workspace-manager
-
+#2 - ComfyUI Workspace Manager
+git clone https://github.com/11cafe/comfyui-workspace-manager.git custom_nodes/comfyui-workspace-manager
 
 #controlnet_aux
 git clone https://github.com/Fannovel16/comfyui_controlnet_aux custom_nodes/comfyui_controlnet_aux
@@ -38,12 +34,6 @@ python custom_nodes/WAS_Extras/install.py
 #sdxl_prompt_styler
 git clone https://github.com/twri/sdxl_prompt_styler custom_nodes/sdxl_prompt_styler
 
-#image-resize-comfyui
-git clone https://github.com/palant/image-resize-comfyui custom_nodes/image-resize-comfyui
-
-
-#https://github.com/BadCafeCode/masquerade-nodes-comfyui
-
 # Impact-Pack
 git clone https://github.com/ltdrdata/ComfyUI-Impact-Pack custom_nodes/ComfyUI-Impact-Pack
 python custom_nodes/ComfyUI-Impact-Pack/install.py
@@ -53,6 +43,6 @@ git clone https://github.com/mav-rik/facerestore_cf custom_nodes/facerestore_cf
 wget https://github.com/TencentARC/GFPGAN/releases/download/v1.3.4/GFPGANv1.4.pth -P ./models/facerestore_models/
 wget https://github.com/sczhou/CodeFormer/releases/download/v0.1.0/codeformer.pth -P ./models/facerestore_models/
 
-
-#git clone https://github.com/pydn/ComfyUI-to-Python-Extension.git
-#pip install -r ComfyUI-to-Python-Extension/requirements.txt
+#ComfyUI To Python Code
+git clone https://github.com/pydn/ComfyUI-to-Python-Extension.git
+pip install -r ComfyUI-to-Python-Extension/requirements.txt
