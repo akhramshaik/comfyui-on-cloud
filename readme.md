@@ -50,20 +50,7 @@ The main goal of this repository is to provide a quick and easy method for indiv
 ---
 
 ##  How can I download new models?
-- Option 1: You can use ComfyUI Manager to download them. Just open the Manager and click
-```install models```
-- Option 2: Find a model you like in CivitAI. When you are in the model page, check your link and find the model id number. 
-Civitai links looks like this:
-
-   ```https://civitai.com/models/139562/realvisxl-v40```
-
-   here ```139562``` is the model id we need. modify the code line below with modelid number you want 
-
-   ```wget https://civitai.com/api/download/models/134084 --content-disposition -P ./models/checkpoints/``` 
-
-   Now, all you need to do is login to your server and then enter your ComfyUI folder with ```cd ComfyUI``` and paste the line above. 
-   Once installation finished you can use reboot your server and you can use the model. 
-   And some models requires login. And to download them, follow instructions in this link :
-
-   https://education.civitai.com/civitais-guide-to-downloading-via-api/
+1. Connect to Portx
+2. Then type this to go to Models Folder cd /home/Welcome/ComfyUI/models
+3. Go to the Checkpoint or LoRA folder based on need and paste your download URL  sudo wget https://civitai.com/api/download/models/916744 --output-document=ZavyChromaXL.safetensors
 
