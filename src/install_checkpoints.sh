@@ -13,7 +13,7 @@ wget https://huggingface.co/runwayml/stable-diffusion-v1-5/blob/main/v1-5-pruned
 wget https://huggingface.co/SG161222/RealVisXL_V5.0/resolve/main/RealVisXL_V5.0_fp16.safetensors -P ./models/checkpoints/
 wget https://huggingface.co/SG161222/RealVisXL_V5.0_Lightning/resolve/main/RealVisXL_V5.0_Lightning_fp16.safetensors -P ./models/checkpoints/
 wget https://civitai.com/api/download/models/646523 -P ./models/checkpoints/
-
+wget https://huggingface.co/Comfy-Org/flux1-dev/resolve/main/flux1-dev-fp8.safetensors -P ./models/checkpoints/
 
 
 
