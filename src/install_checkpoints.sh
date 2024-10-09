@@ -6,15 +6,15 @@ mkdir -p ./models/ipadapter/
 mkdir -p ./models/upscale_models/
 
 #Checkpoint Models:
+cd /home/Welcome/ComfyUI/models/checkpoints
+wget https://huggingface.co/Comfy-Org/flux1-dev/resolve/main/flux1-dev-fp8.safetensors --output-document=Flux1DevFP8.safetensors
+wget https://huggingface.co/SG161222/RealVisXL_V5.0/resolve/main/RealVisXL_V5.0_fp16.safetensors --output-document=RealVisXL_V5_FP16.safetensors
+wget https://huggingface.co/SG161222/RealVisXL_V5.0_Lightning/resolve/main/RealVisXL_V5.0_Lightning_fp16.safetensors --output-document=RealVisXL_V5_FP16_Lightning.safetensors
+wget https://civitai.com/api/download/models/646523 --output-document=epiCRealismXL_FP16.safetensors
 
-#Add 1.5 models also
-
-wget https://huggingface.co/runwayml/stable-diffusion-v1-5/blob/main/v1-5-pruned.safetensors -P ./models/checkpoints/
-wget https://huggingface.co/SG161222/RealVisXL_V5.0/resolve/main/RealVisXL_V5.0_fp16.safetensors -P ./models/checkpoints/
-wget https://huggingface.co/SG161222/RealVisXL_V5.0_Lightning/resolve/main/RealVisXL_V5.0_Lightning_fp16.safetensors -P ./models/checkpoints/
-wget https://civitai.com/api/download/models/646523 -P ./models/checkpoints/
-wget https://huggingface.co/Comfy-Org/flux1-dev/resolve/main/flux1-dev-fp8.safetensors -P ./models/checkpoints/
-
+#LoRA
+cd /home/Welcome/ComfyUI/models/loras
+wget https://huggingface.co/comfyanonymous/flux_RealismLora_converted_comfyui/resolve/main/flux_realism_lora.safetensors --output-document=FluxRealismLoRA.safetensors
 
 
 # ControlNets SD 1.5
