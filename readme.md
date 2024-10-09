@@ -11,7 +11,8 @@ The main goal of this repository is to provide a quick and easy method for indiv
 ---
 ## How to Setup?
 ``` git clone https://github.com/akhramshaik/comfyui-on-cloud.git
-    chmod +x ./comfyui-on-cloud/src/1_vm_setup.sh ```
+    chmod +x ./comfyui-on-cloud/src/1_vm_setup.sh
+```
 
 ``` chmod +x ./comfyui-on-cloud/src/2_install_comfyui_complete.sh ```
 
