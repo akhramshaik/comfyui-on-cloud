@@ -34,23 +34,9 @@ The main goal of this repository is to provide a quick and easy method for indiv
 
 ## How to Use?
 
-1. Connecting to SSH.
+1. To Stop the Server ``` gcloud compute instances stop vm-name --zone asia-south1-a ```
 
-   ```
-        gcloud compute ssh comfyui-name --zone asia-south1-a
-    ```
-
-2. Stop the Server.
-
-   ```
-        gcloud compute instances stop comfyui-name --zone asia-south1-a
-    ```
-
-3. Start the Server.
-
-    ```
-        gcloud compute instances start comfyui-name --zone asia-south1-a
-    ```
+2. To Start the Server ``` gcloud compute instances start vm-name --zone asia-south1-a ```
 ---
 
 ##  How can I download new models?
