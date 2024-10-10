@@ -42,11 +42,8 @@ wget https://huggingface.co/comfyanonymous/ControlNet-v1-1_fp16_safetensors/reso
 
 
 ## ControlNet SDXL
-wget https://huggingface.co/stabilityai/control-lora/resolve/main/control-LoRAs-rank256/control-lora-canny-rank256.safetensors -P ./models/controlnet/
-wget https://huggingface.co/stabilityai/control-lora/resolve/main/control-LoRAs-rank256/control-lora-depth-rank256.safetensors -P ./models/controlnet/
-wget https://huggingface.co/stabilityai/control-lora/resolve/main/control-LoRAs-rank256/control-lora-recolor-rank256.safetensors -P ./models/controlnet/
-wget https://huggingface.co/stabilityai/control-lora/resolve/main/control-LoRAs-rank256/control-lora-sketch-rank256.safetensors -P ./models/controlnet/
-#wget https://huggingface.co/diffusers/controlnet-depth-sdxl-1.0-mid/resolve/main/diffusion_pytorch_model.bin -O ./models/controlnet/depth-sdxl-1.0-diffusion_pytorch_model.bin
+cd /home/Welcome/ComfyUI/models/controlnet
+wget https://huggingface.co/xinsir/controlnet-union-sdxl-1.0/resolve/main/diffusion_pytorch_model_promax.safetensors --output-document=UnionSDXL1_0.safetensors
 
 
 #IPADAPTER
