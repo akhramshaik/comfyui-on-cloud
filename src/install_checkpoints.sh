@@ -7,7 +7,7 @@ mkdir -p ./models/upscale_models/
 
 #Checkpoint Models:
 cd /home/Welcome/ComfyUI/models/checkpoints
-wget https://civitai.com/api/download/models/130072 --output-document=RealisticVisionV6_B1.ckpt
+wget https://huggingface.co/SG161222/Realistic_Vision_V3.0_VAE/resolve/main/Realistic_Vision_V3.0.safetensors --output-document=Realistic_Vision_V3.safetensors
 wget https://huggingface.co/Comfy-Org/flux1-dev/resolve/main/flux1-dev-fp8.safetensors --output-document=Flux1DevFP8.safetensors
 wget https://huggingface.co/SG161222/RealVisXL_V5.0/resolve/main/RealVisXL_V5.0_fp16.safetensors --output-document=RealVisXL_V5_FP16.safetensors
 wget https://huggingface.co/SG161222/RealVisXL_V5.0_Lightning/resolve/main/RealVisXL_V5.0_Lightning_fp16.safetensors --output-document=RealVisXL_V5_FP16_Lightning.safetensors
