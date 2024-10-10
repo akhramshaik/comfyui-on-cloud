@@ -63,7 +63,12 @@ pip install -r custom_nodes/ComfyUI-Inspyrenet-Rembg/requirements.txt
 #15 - Rgthree
 git clone https://github.com/rgthree/rgthree-comfy.git custom_nodes/rgthree-comfy
 
-#15 - Rgthree
+#16 - ComfyUI Art Venture
 git clone https://github.com/sipherxyz/comfyui-art-venture.git custom_nodes/comfyui-art-venture
 pip install -r custom_nodes/comfyui-art-venture/requirements.txt
 
+#17 - ComfyUI Essentials
+#git clone https://github.com/cubiq/ComfyUI_essentials.git
+
+#18 - ComfyUI FaceAnalysis
+#git clone https://github.com/cubiq/ComfyUI_FaceAnalysis.git
