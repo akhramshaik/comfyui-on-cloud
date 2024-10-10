@@ -12,9 +12,48 @@ wget https://huggingface.co/SG161222/RealVisXL_V5.0/resolve/main/RealVisXL_V5.0_
 wget https://huggingface.co/SG161222/RealVisXL_V5.0_Lightning/resolve/main/RealVisXL_V5.0_Lightning_fp16.safetensors --output-document=RealVisXL_V5_FP16_Lightning.safetensors
 wget https://civitai.com/api/download/models/646523 --output-document=epiCRealismXL_FP16.safetensors
 
-#LoRA
+#LoRAs:
 cd /home/Welcome/ComfyUI/models/loras
 wget https://huggingface.co/comfyanonymous/flux_RealismLora_converted_comfyui/resolve/main/flux_realism_lora.safetensors --output-document=FluxRealismLoRA.safetensors
+wget https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid_sd15_lora.safetensors --output-document=ip-adapter-faceid_sd15_lora.safetensors
+wget https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-plusv2_sd15_lora.safetensors --output-document=ip-adapter-faceid-plusv2_sd15_lora.safetensors
+wget https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid_sdxl_lora.safetensors --output-document=ip-adapter-faceid_sdxl_lora.safetensors
+wget https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-plusv2_sdxl_lora.safetensors --output-document=ip-adapter-faceid-plusv2_sdxl_lora.safetensors
+
+#Clip Vision:
+cd /home/Welcome/ComfyUI/models/clip_vision
+wget https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/image_encoder/model.safetensors --output-document=SDXL_CLIP-ViT-bigG-14-laion2B-39B-b160k.safetensors 
+wget https://huggingface.co/h94/IP-Adapter/resolve/main/models/image_encoder/model.safetensors --output-document=SD15_CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors
+
+#IPAdapter Models:
+cd /home/Welcome/ComfyUI/models/ipadapter/
+wget https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15.safetensors --output-document=ip-adapter_sd15.safetensors
+wget https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15_light_v11.bin --output-document=ip-adapter_sd15_light_v11.bin
+wget https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-plus_sd15.safetensors --output-document=ip-adapter-plus_sd15.safetensors
+wget https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-plus-face_sd15.safetensors --output-document=ip-adapter-plus-face_sd15.safetensors
+wget https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-full-face_sd15.safetensors --output-document=ip-adapter-full-face_sd15.safetensors
+wget https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15_vit-G.safetensors --output-document=ip-adapter_sd15_vit-G.safetensors
+wget https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter_sdxl_vit-h.safetensors --output-document=ip-adapter_sdxl_vit-h.safetensors
+wget https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter-plus_sdxl_vit-h.safetensors --output-document=ip-adapter-plus_sdxl_vit-h.safetensors
+wget https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter-plus-face_sdxl_vit-h.safetensors --output-document=ip-adapter-plus-face_sdxl_vit-h.safetensors
+wget https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter_sdxl.safetensors --output-document=ip-adapter_sdxl.safetensors
+wget https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15_light.safetensors --output-document=ip-adapter_sd15_light.safetensors
+wget https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid_sd15.bin --output-document=ip-adapter-faceid_sd15.bin
+wget https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-plusv2_sd15.bin --output-document=ip-adapter-faceid-plusv2_sd15.bin
+wget https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-portrait-v11_sd15.bin --output-document=ip-adapter-faceid-portrait-v11_sd15.bin
+wget https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid_sdxl.bin --output-document=ip-adapter-faceid_sdxl.bin
+wget https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-plusv2_sdxl.bin --output-document=ip-adapter-faceid-plusv2_sdxl.bin
+wget https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-portrait_sdxl.bin --output-document=ip-adapter-faceid-portrait_sdxl.bin
+wget https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-portrait_sdxl_unnorm.bin --output-document=ip-adapter-faceid-portrait_sdxl_unnorm.bin
+wget https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-plus_sd15.bin --output-document=ip-adapter-faceid-plus_sd15.bin
+wget https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-portrait_sd15.bin --output-document=ip-adapter-faceid-portrait_sd15.bin
+wget https://huggingface.co/ostris/ip-composition-adapter/resolve/main/ip_plus_composition_sd15.safetensors --output-document=ip_plus_composition_sd15.safetensors
+wget https://huggingface.co/ostris/ip-composition-adapter/resolve/main/ip_plus_composition_sdxl.safetensors --output-document=ip_plus_composition_sdxl.safetensors
+
+
+#ControlNet SDXL
+cd /home/Welcome/ComfyUI/models/controlnet
+wget https://huggingface.co/xinsir/controlnet-union-sdxl-1.0/resolve/main/diffusion_pytorch_model_promax.safetensors --output-document=UnionSDXL1_0.safetensors
 
 
 # ControlNets SD 1.5
@@ -41,34 +80,9 @@ wget https://huggingface.co/comfyanonymous/ControlNet-v1-1_fp16_safetensors/reso
 wget https://huggingface.co/comfyanonymous/ControlNet-v1-1_fp16_safetensors/resolve/main/control_v11p_sd15_seg_fp16.safetensors -P ./models/controlnet/
 
 
-## ControlNet SDXL
-cd /home/Welcome/ComfyUI/models/controlnet
-wget https://huggingface.co/xinsir/controlnet-union-sdxl-1.0/resolve/main/diffusion_pytorch_model_promax.safetensors --output-document=UnionSDXL1_0.safetensors
 
 
-#IPADAPTER
-wget https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15.safetensors -P ./models/ipadapter/
-wget https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15_light_v11.bin -P ./models/ipadapter/
-wget https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-plus_sd15.safetensors -P ./models/ipadapter/
-wget https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-plus-face_sd15.safetensors -P ./models/ipadapter/
-wget https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-full-face_sd15.safetensors -P ./models/ipadapter/
-wget https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15_vit-G.safetensors -P ./models/ipadapter/
-wget https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter_sdxl_vit-h.safetensors -P ./models/ipadapter/
-wget https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter-plus_sdxl_vit-h.safetensors -P ./models/ipadapter/
-wget https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter-plus-face_sdxl_vit-h.safetensors -P ./models/ipadapter/
-wget https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter_sdxl.safetensors -P ./models/ipadapter/
-wget https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15_light.safetensors -P ./models/ipadapter/
-wget https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid_sd15.bin -P ./models/ipadapter/
-wget https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-plusv2_sd15.bin -P ./models/ipadapter/
-wget https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-portrait-v11_sd15.bin -P ./models/ipadapter/
-wget https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid_sdxl.bin -P ./models/ipadapter/
-wget https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-plusv2_sdxl.bin -P ./models/ipadapter/
-wget https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-portrait_sdxl.bin -P ./models/ipadapter/
-wget https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-portrait_sdxl_unnorm.bin -P ./models/ipadapter/
-wget https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-plus_sd15.bin -P ./models/ipadapter/
-wget https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-portrait_sd15.bin -P ./models/ipadapter/
-wget https://huggingface.co/ostris/ip-composition-adapter/resolve/main/ip_plus_composition_sd15.safetensors -P ./models/ipadapter/
-wget https://huggingface.co/ostris/ip-composition-adapter/resolve/main/ip_plus_composition_sdxl.safetensors -P ./models/ipadapter/
+
 
 
 
@@ -79,10 +93,9 @@ wget https://huggingface.co/ostris/ip-composition-adapter/resolve/main/ip_plus_c
 
 
 # #LORAS
-# wget https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid_sd15_lora.safetensors --output-document=ip-adapter-faceid_sd15_lora.safetensors && mv ip-adapter-faceid_sd15_lora.safetensors "$DEST_DIR_LORAS"
-# wget https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-plusv2_sd15_lora.safetensors --output-document=ip-adapter-faceid-plusv2_sd15_lora.safetensors && mv ip-adapter-faceid-plusv2_sd15_lora.safetensors "$DEST_DIR_LORAS"
-# wget https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid_sdxl_lora.safetensors --output-document=ip-adapter-faceid_sdxl_lora.safetensors && mv ip-adapter-faceid_sdxl_lora.safetensors "$DEST_DIR_LORAS"
-# wget https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-plusv2_sdxl_lora.safetensors --output-document=ip-adapter-faceid-plusv2_sdxl_lora.safetensors && mv ip-adapter-faceid-plusv2_sdxl_lora.safetensors "$DEST_DIR_LORAS"
-# wget https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-plus_sd15_lora.safetensors --output-document=ip-adapter-faceid-plus_sd15_lora.safetensors && mv ip-adapter-faceid-plus_sd15_lora.safetensors "$DEST_DIR_LORAS"
+wget https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid_sd15_lora.safetensors --output-document=ip-adapter-faceid_sd15_lora.safetensors
+wget https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-plusv2_sd15_lora.safetensors --output-document=ip-adapter-faceid-plusv2_sd15_lora.safetensors
+wget https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid_sdxl_lora.safetensors --output-document=ip-adapter-faceid_sdxl_lora.safetensors
+wget https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-plusv2_sdxl_lora.safetensors --output-document=ip-adapter-faceid-plusv2_sdxl_lora.safetensors
 
 # #UPSCALE_METHODS
