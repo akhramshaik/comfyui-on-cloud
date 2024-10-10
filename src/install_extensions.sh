@@ -62,3 +62,8 @@ pip install -r custom_nodes/ComfyUI-Inspyrenet-Rembg/requirements.txt
 
 #15 - Rgthree
 git clone https://github.com/rgthree/rgthree-comfy.git custom_nodes/rgthree-comfy
+
+#15 - Rgthree
+git clone https://github.com/sipherxyz/comfyui-art-venture.git custom_nodes/comfyui-art-venture
+pip install -r custom_nodes/comfyui-art-venture/requirements.txt
+
