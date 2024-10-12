@@ -59,7 +59,7 @@ wget https://huggingface.co/xinsir/controlnet-union-sdxl-1.0/resolve/main/diffus
 
 #UPScalars
 cd /home/Welcome/ComfyUI/models/upscale_models
-wget https://huggingface.co/Kim2091/UltraSharp/resolve/main/4x-UltraSharp.safetensors--output-document=4x-Ultrasharp.safetensors
+wget https://huggingface.co/Kim2091/UltraSharp/resolve/main/4x-UltraSharp.safetensors --output-document=4x-Ultrasharp.safetensors
 
 
 # ControlNets SD 1.5
