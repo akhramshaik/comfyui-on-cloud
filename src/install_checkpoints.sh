@@ -57,6 +57,11 @@ cd /home/Welcome/ComfyUI/models/controlnet
 wget https://huggingface.co/xinsir/controlnet-union-sdxl-1.0/resolve/main/diffusion_pytorch_model_promax.safetensors --output-document=UnionSDXL1_0.safetensors
 
 
+#UPScalars
+cd /home/Welcome/ComfyUI/models/upscale_models
+wget https://huggingface.co/Kim2091/UltraSharp/resolve/main/4x-UltraSharp.safetensors--output-document=4x-Ultrasharp.safetensors
+
+
 # ControlNets SD 1.5
 #- Depth
 wget https://huggingface.co/comfyanonymous/ControlNet-v1-1_fp16_safetensors/resolve/main/control_v11f1p_sd15_depth_fp16.safetensors -P ./models/controlnet/
