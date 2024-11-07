@@ -4,6 +4,10 @@ mkdir -p ./models/clip/
 mkdir -p ./models/clip_vision/
 mkdir -p ./models/ipadapter/
 mkdir -p ./models/upscale_models/
+mkdir -p ./models/checkpoints/SD15
+mkdir -p ./models/checkpoints/SDXL
+mkdir -p ./models/checkpoints/Flux
+mkdir -p ./models/checkpoints/Kolors
 
 #Checkpoint Models:
 cd /home/Welcome/ComfyUI/models/checkpoints
