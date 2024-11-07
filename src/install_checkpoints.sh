@@ -52,22 +52,17 @@ wget https://huggingface.co/ostris/ip-composition-adapter/resolve/main/ip_plus_c
 wget https://huggingface.co/ostris/ip-composition-adapter/resolve/main/ip_plus_composition_sdxl.safetensors --output-document=ip_plus_composition_sdxl.safetensors
 
 
-#ControlNet SDXL
-cd /home/Welcome/ComfyUI/models/controlnet
-wget https://huggingface.co/xinsir/controlnet-union-sdxl-1.0/resolve/main/diffusion_pytorch_model_promax.safetensors --output-document=UnionSDXL1_0.safetensors
-
 
 #UPScalars
 cd /home/Welcome/ComfyUI/models/upscale_models
 wget https://huggingface.co/Kim2091/UltraSharp/resolve/main/4x-UltraSharp.safetensors --output-document=4x-Ultrasharp.safetensors
 
+############################## ControlNets Start ##############################
+cd /home/Welcome/ComfyUI/models/controlnet
 
-# ControlNets SD 1.5
-#- Depth
+### ControlNets SD 1.5 ###
 wget https://huggingface.co/comfyanonymous/ControlNet-v1-1_fp16_safetensors/resolve/main/control_v11f1p_sd15_depth_fp16.safetensors -P ./models/controlnet/
-#- Normal Maps
 wget https://huggingface.co/comfyanonymous/ControlNet-v1-1_fp16_safetensors/resolve/main/control_v11p_sd15_normalbae_fp16.safetensors -P ./models/controlnet/
-#- Canny Maps
 wget https://huggingface.co/comfyanonymous/ControlNet-v1-1_fp16_safetensors/resolve/main/control_v11p_sd15_canny_fp16.safetensors -P ./models/controlnet/
 wget https://huggingface.co/comfyanonymous/ControlNet-v1-1_fp16_safetensors/resolve/main/control_v11p_sd15_mlsd_fp16.safetensors -P ./models/controlnet/
 wget https://huggingface.co/comfyanonymous/ControlNet-v1-1_fp16_safetensors/resolve/main/control_v11p_sd15_scribble_fp16.safetensors -P ./models/controlnet/
@@ -76,20 +71,29 @@ wget https://huggingface.co/comfyanonymous/ControlNet-v1-1_fp16_safetensors/reso
 wget https://huggingface.co/comfyanonymous/ControlNet-v1-1_fp16_safetensors/resolve/main/control_v11p_sd15_lineart_fp16.safetensors -P ./models/controlnet/
 wget https://huggingface.co/comfyanonymous/ControlNet-v1-1_fp16_safetensors/resolve/main/control_v11p_sd15s2_lineart_anime_fp16.safetensors -P ./models/controlnet/
 wget https://huggingface.co/comfyanonymous/ControlNet-v1-1_fp16_safetensors/resolve/main/control_v11e_sd15_shuffle_fp16.safetensors -P ./models/controlnet/
-#- Inpainting
 wget https://huggingface.co/comfyanonymous/ControlNet-v1-1_fp16_safetensors/resolve/main/control_v11p_sd15_inpaint_fp16.safetensors -P ./models/controlnet/
-# - Tile
 wget https://huggingface.co/comfyanonymous/ControlNet-v1-1_fp16_safetensors/resolve/main/control_v11u_sd15_tile_fp16.safetensors -P ./models/controlnet/
-#- Inpainting to Painting
 wget https://huggingface.co/comfyanonymous/ControlNet-v1-1_fp16_safetensors/resolve/main/control_v11e_sd15_ip2p_fp16.safetensors -P ./models/controlnet/
-#- Segmentation
 wget https://huggingface.co/comfyanonymous/ControlNet-v1-1_fp16_safetensors/resolve/main/control_v11p_sd15_seg_fp16.safetensors -P ./models/controlnet/
 
+###ControlNet SDXL ###
+wget https://huggingface.co/xinsir/controlnet-union-sdxl-1.0/resolve/main/diffusion_pytorch_model_promax.safetensors --output-document=UnionSDXL1_0.safetensors
+
+### ControlNets Kolors ###
+wget https://huggingface.co/Kwai-Kolors/Kolors-ControlNet-Depth/resolve/main/diffusion_pytorch_model.safetensors --output-document=Kolors-ControlNet-Depth.safetensors
+wget https://huggingface.co/Kwai-Kolors/Kolors-ControlNet-Canny/resolve/main/diffusion_pytorch_model.safetensors --output-document=Kolors-ControlNet-Canny.safetensors
+wget https://huggingface.co/Kwai-Kolors/Kolors-ControlNet-Pose/resolve/main/diffusion_pytorch_model.safetensors --output-document=Kolors-ControlNet-Pose.safetensors
+
+############################## ControlNets Ends ##############################
 
 
 
+############################## Inpainting Models Start ##############################
 
+cd /home/Welcome/ComfyUI/models/unet
+wget https://huggingface.co/Kwai-Kolors/Kolors-Inpainting/resolve/main/unet/diffusion_pytorch_model.safetensors --output-document=Kolors-Inpainting.safetensors
 
+############################## Inpainting Models Start ##############################
 
 
 
