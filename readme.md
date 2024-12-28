@@ -66,3 +66,8 @@ The main goal of this repository is to provide a quick and easy method for indiv
        sudo wget https://civitai.com/api/download/models/916744 --output-document=ZavyChromaXL.safetensors
    ```
 
+---
+##  Debug
+
+1. If 500 Error pip install --upgrade aiohttp
+2. journalctl -u comfyui.service -n 500 --no-pager
