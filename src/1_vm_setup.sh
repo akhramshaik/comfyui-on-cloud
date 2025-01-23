@@ -20,6 +20,7 @@ source .bashrc
 
 pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu118
 pip install onnxruntime onnxruntime-gpu insightface
+pip install --upgrade aiohttp
 
 echo -e "import torch\nprint(torch.cuda.is_available())\nprint(torch.cuda.get_device_name(0))" > test_cuda.py
 python test_cuda.py
