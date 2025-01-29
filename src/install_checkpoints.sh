@@ -113,3 +113,5 @@ wget https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid
 wget https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-plusv2_sdxl_lora.safetensors --output-document=ip-adapter-faceid-plusv2_sdxl_lora.safetensors
 
 # #UPSCALE_METHODS
+
+#wget --header="Authorization: Bearer hf_mtOIBeztBNINRny" https://huggingface.co/RunDiffusion/Juggernaut-XI-v11/resolve/main/Juggernaut-XI-byRunDiffusion.safetensors --output-document=JuggXL_V11_by_RunDiffusion.safetensors
